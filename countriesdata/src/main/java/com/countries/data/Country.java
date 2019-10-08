@@ -4,8 +4,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Country {
-    private static final AtomicInteger counter = new AtomicInteger();
-    private int id;
+    private static final AtomicLong counter = new AtomicLong();
+    private long id;
     private String name;
     private int population;
     private int landmass;
@@ -15,7 +15,7 @@ public class Country {
 
     public Country(String name, int population, int landmass, int medianage){
 
-        this.id = counter.incrementAndGet();
+        this.id = counter.getAndIncrement();
         this.name = name;
         this.population = population;
         this.landmass = landmass;

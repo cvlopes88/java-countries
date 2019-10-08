@@ -2,11 +2,11 @@ package com.countries.data;
 
 import java.util.ArrayList;
 
-public class CountriesList {
+public class CountryList {
 
     ArrayList<Country> countryList = new ArrayList<>();
 
-    public CountriesList(){
+    public CountryList(){
         countryList.add(new Country("China",1420062022,9388211,39));
         countryList.add(new Country("India",1368737513,2973190,28));
         countryList.add(new Country("U.S.",329093110,9147420,38));
